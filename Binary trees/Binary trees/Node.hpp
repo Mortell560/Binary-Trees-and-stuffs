@@ -16,7 +16,6 @@ namespace Tree {
 
 		static void showTreeHorizontal(Node* root, int space = 0);
 		static void showTreeVertical(Node* root, int space = 0);
-
 	};
 }
 

@@ -11,5 +11,8 @@ int main(int argv, char** args) {
 	node->left->right = new Tree::Node(93);
 	node->left->left = new Tree::Node(65);
 	Tree::Node::showTreeHorizontal(node);
+	std::cout << '\n';
+
+	Tree::Node::showTreeVertical(node);
 	return 0;
 }
