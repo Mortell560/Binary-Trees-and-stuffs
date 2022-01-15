@@ -4,7 +4,7 @@
 
 int main(int argv, char** args) {
 
-	auto* node = new Tree::Node(4);
+	auto node = new Tree::Node(4);
 	node->right = new Tree::Node(8);
 	node->right->right = new Tree::Node(-9);
 	node->right->left = new Tree::Node(3);
@@ -15,6 +15,6 @@ int main(int argv, char** args) {
 	node->left->left = new Tree::Node(65);
 
 	Tree::Node::showTreeHorizontal(node);
-	std::cout << '\n' << Tree::Node::size(node);
+	std::cout << '\n' << Tree::Node::size(node) << '\n' << Tree::Node::height(node) << '\n' << Tree::Node::leaves_num(node);
 	return 0;
 }

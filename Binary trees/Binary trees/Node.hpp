@@ -21,6 +21,9 @@ namespace Tree {
 		static void showTreeVertical(Node* root, int space = 0);
 		static bool lookFor(Node* root, const int val);
 		static int size(Node* root);
+		static int height(Node* root);
+		static int leaves_num(Node* root);
+
 	};
 }
 

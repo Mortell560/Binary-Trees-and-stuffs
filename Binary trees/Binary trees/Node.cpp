@@ -53,4 +53,16 @@ namespace Tree {
 		return Node::size(root->right) + Node::size(root->left) + 1;
 	}
 
+	//!\brief returns the height for a given root
+	int Node::height(Node* root) {
+		if (root == NULL) { return 0; }
+		return max(Node::height(root->left), Node::height(root->right)) + 1;
+	}
+
+	//!\brief returns the number of leaves for a given root
+	int Node::leaves_num(Node* root) {
+		if (root == NULL) { return 0; }
+		else if (root->right == NULL && root->left == NULL) { return 1; }
+		return Node::leaves_num(root->right) + Node::leaves_num(root->left);
+	}
 }
